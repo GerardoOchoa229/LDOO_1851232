@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cereales</title>
+        <link rel="stylesheet" href="main.css">
+        <script src='main.js'></script>
+        <link rel="icon" href="favicon.png" />
+    </head>
+    <body>   
+        <menu class='barnav'>
+            <a class='home' href='Practica1.html'>Home</a>
+            <a class='cereales' href='Cereales.html'>Cereales</a>
+            <a class='empresas' href='Empresas.html'>Empresas</a>
+        </menu>
+        <ul class="menuIzq" >
+            <li><a href='#inicio'>Inicio</a></li>
+            <li><a href='#form1'>¿Desde qué país contestas este cuestionario?</a></li>
+            <li><a href='#drop'> Cuentanos sobre ti</a></li>
+        </ul>
+        <h1 id='inicio'>Cereales</h1>
+        <div class="desc">
+            <h2>¿Por qué son tan importantes en nuestra dieta?</h2>
+                <p id='parrafo'>Los cereales de desayuno y snacks ayudan a que
+                    la dieta sea más variada y equilibrada, ya que su consumo
+                    proporciona una parte importante de las CDR de vitaminas y 
+                    minerales, además de por su importante aporte en fibra e 
+                    hidratos de carbono.</p>
+           
+               
+        </div> 
+        <img class="imagen1" id="cajas" src=cajas.jpg alt="Variedad de cereales">
+        <br><br><br><br><br>
+        <hr>
+        <div>
+            <form>
+                <h2 id='form1' >¿Desde qué país contestas este cuestionario?</h2>
+                <label id="nombre"> Ingresa el país:</label>
+                <input type='text' id="pais" maxlength='50' size='50'><br>
+                <button type='button' onclick="alert('Pais ingresado')">Enviar</button>
+                <button type="reset" value="Reset">Cancelar</button>
+            </form>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <hr>
+        <div class='Antecedentes'>
+            <h2 id='drop' >Cuentanos sobre ti</h2>
+            <p>Estamos desarrollando un censo para determinar cuales con los gustos
+            de la comunidad respecto a los deliciosos cereales</p>
+            <label>Ingresa tu cereal favorito:</label>
+            <select>
+                <option value='Corn'>Confleis</option>
+                <option value='Froot'>Fruti Lupis</option>
+                <option value='Choco'>Chocopispis</option>
+                <option value='Cookie'>Kuki Kisp</option>
+            </select>
+            <button type='button' onclick="alert('Gracias por apoyarnos')">Enviar</button><br>
+            <label> Fecha en la que contestas este cuestionario: </label>
+            <input type='date' id='fecha'> 
+        </div>
+        
+        
+    </body>
+    
+</html>

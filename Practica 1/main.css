@@ -1,0 +1,120 @@
+            body{
+                padding-left: 10em;
+                color: #FFFFFF;
+                background-image: url("carton.jpg") ;
+                font-family:Arial;
+                
+            }
+            
+            p{
+                font-family:'High Tower';
+                font-size:24px; 
+                color: #FFFFFF;
+            }
+            h1{
+                color: #493722 ;
+                font-family: 'Forte';
+                font-size: 150px;
+                margin: 0;
+                border:0;
+                padding: 0;
+                position: relative;
+                left:250px;
+            }
+            h2{
+                color: #684F32;
+                font-family: Jokerman;
+            }
+            ul.menuIzq {
+                font-family: Jokerman;
+                list-style-type:none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                top: 2em;
+                left: 1em;
+                width: 9em 
+            }
+            ul.menuIzq li{
+                background-color: rgba(217, 211, 160,.65); ;
+                margin: 0.5em 0;
+                padding: 0.3em;
+                position: relative;
+                top: 276px;
+                
+            }
+            ul.menuIzq a{
+                text-decoration:none
+            }
+            ul.menuIzq a:link{
+                color: #684F32
+            }
+            ul.menuIzq a:visited{
+                color: #FFFFFF;
+            }
+            a.home{
+                color: #FFFFFF;
+                font-family: Jokerman;
+                font-size: 40px;
+                position: relative;
+                right: 40px;
+            }
+            a.cereales{
+                color: #FFFFFF;
+                font-family: Jokerman;
+                font-size: 40px;
+                position: relative;
+                left: 350px;
+            }
+            a.empresas{
+                color: #FFFFFF;
+                font-family: Jokerman;
+                font-size: 40px;
+                position: relative;
+                left: 700px;
+            }
+            
+            a.Redes{
+                color: black
+            }
+            div{
+                background-color: rgba(217, 211, 160,.65);
+            }
+            label{
+                font-family:'High Tower';
+                font-size:24px; 
+                color: #FFFFFF;
+            }
+            
+            #cajas{
+                width:750px;
+                position:relative;
+                left:300px;
+            }
+            
+            #froot{
+                width: 250px;
+                margin: 25px;
+            }
+            #choco{
+                width: 250px;
+                margin: 25px;
+            }
+            #nesquik{
+                width: 250px;
+                margin: 25px;
+            }
+            #cookie{
+                width: 250px;
+                margin: 0px;
+            }
+            .logos{
+                position:relative;
+                left: 3px;
+                width: 1200px;
+            }
+            .reporte{
+                position:relative;
+                left: 3px;
+                width: 1200px;
+            }
