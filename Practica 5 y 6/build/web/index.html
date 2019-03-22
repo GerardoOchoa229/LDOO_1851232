@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Practicas 5 y 6 LDOO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1>Registro</h1>
+        
+        <div>
+            <h2>Registro de usuario</h2>
+            <form action="login" method="post">
+                <label>Email:</label><input type="email" name="email" value="correo"/><br>
+                <label>Contraseña:</label><input type="password" name="password" value="contraseña"/><br>
+                <input type="submit" value="Enviar"/>  
+            </form>
+            <form action="recibe.jsp" method="post">
+                <label>Nombre:</label><input type="text" name="nombre"/><br>
+                <label>Fecha de nacimiento:</label><input type="date" name="fecha"/><br>
+                <input type="submit" value="Enviar"/>  
+            </form>
+        </div>
+    </body>
+</html>
