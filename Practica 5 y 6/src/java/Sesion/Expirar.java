@@ -3,22 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import javax.servlet.http.Cookie;
+package Sesion;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author cuack
  */
-@WebServlet(urlPatterns = {"/registro"})
-public class registro extends HttpServlet {
+@WebServlet(name = "Expirar", urlPatterns = {"/Expirar"})
+public class Expirar extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -29,7 +30,7 @@ public class registro extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    
+   
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -56,34 +57,27 @@ public class registro extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-            HttpSession sesion= request.getSession();
-            User user=new User(request.getParameter("email"),request.getParameter("nombre")
-                    ,request.getParameter("fecha"),request.getParameter("password"));
-            sesion.setAttribute("user",user);
-            
-            Cookie cookie=new Cookie("id",sesion.getId());
-            response.addCookie(cookie);
-            
-            PrintWriter out= response.getWriter();
-            out.println("<!DOCTYPE html>\n" +
-            "\n" +
-            "<html>\n" +
-            "    <head>\n" +
-            "        <title>Practicas 5 y 6 LDOO</title>\n" +
-            "        <meta charset=\"UTF-8\">\n" +
-            "        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
-            "        <link rel=\"stylesheet\" href=\"main.css\">\n" +
-            "    </head>\n" +
-            "    <body>\n" +
-            "        <h1>Registrado</h1>\n" +
-            "        \n" +
-            "        <div>\n" +
-            "            <h2>Registro de usuario</h2>\n" +
-            "            <a href=\"login\">Ir a login</a>\n" +
-            "        </div>\n" +
-            "    </body>\n" +
-            "</html>");
-                   
+        Cookie cookie[]=request.getCookies();
+        cookie[0].setMaxAge(0);
+        PrintWriter out= response.getWriter();
+        out.println("<html>\n" +
+"    <head>\n" +
+"        <title>Iniciar Sesión</title>\n" +
+"        <meta charset=\"UTF-8\">\n" +
+"        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
+"        <link rel=\"stylesheet\" href=\"main.css\">\n" +
+"    </head>\n" +
+"    <body>\n" +
+"        <div>\n" +
+"            <form action='Login' method='post'>\n" +
+"                 <label>Email:</label><input type=\"email\" name=\"email\"/><br>\n" +
+"                 <label>Contraseña:</label><input type=\"password\" name=\"password\"/><br>\n" +
+"                 <input type=\"submit\" value=\"Enviar\"/>  \n" +
+"            </form>\n" +
+"        </div>\n" +
+"    </body>\n" +
+"</html>");
+        
     }
 
     /**
