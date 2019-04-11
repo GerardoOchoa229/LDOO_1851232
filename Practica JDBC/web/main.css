@@ -1,0 +1,26 @@
+body{
+    background-color: #006666;
+    background-repeat: repeat;
+}
+
+h1{
+   font-family: brothers; 
+   font-size: 120px;
+   text-align: center;
+}
+div{
+    background-color: rgba(204, 189, 150,.90)
+}
+
+h2{
+    text-align: center;
+}
+form{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    color:red;
+    font-size:60px;
+}
