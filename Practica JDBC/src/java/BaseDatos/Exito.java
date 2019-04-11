@@ -77,7 +77,7 @@ public class Exito extends HttpServlet {
                 "-->\n" +
                 "<html>\n" +
                 "    <head>\n" +
-                "        <title>Bienvenico</title>\n" +
+                "        <title>Bienvenido</title>\n" +
                 "        <meta charset=\"UTF-8\">\n" +
                 "        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
                 "        <link rel=\"stylesheet\" href=\"main.css\">\n" +

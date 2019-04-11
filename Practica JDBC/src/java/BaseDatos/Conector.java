@@ -51,17 +51,7 @@ public class Conector {
             ps.executeUpdate();
     }
     
-    public String mostrar() throws ClassNotFoundException, SQLException{
-            String salida="";
-            Class.forName(clase);
-            Connection conexion= (Connection) DriverManager.getConnection(url,usuario,contraseña);
-            Statement sentencia=conexion.createStatement();
-            ResultSet resultado= sentencia.executeQuery("SELECT * FROM usuarios");
-            while(resultado.next()){
-                salida+= resultado.getString("email"+resultado.getString("password"));
-            }
-            return salida;
-    }
+    
     
     public String validar() throws ClassNotFoundException, SQLException{
         String salida="";
