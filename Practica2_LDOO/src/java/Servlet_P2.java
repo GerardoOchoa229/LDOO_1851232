@@ -47,14 +47,15 @@ public class Servlet_P2 extends HttpServlet {
             sal.println("<!DOCTYPE html>");
             sal.println("<html>");
             sal.println("<head>");
-            sal.println("<title>Datos Introducidos</title>");            
+            sal.println("<title>Datos Introducidos</title>\n" +
+"        <link rel=\"stylesheet\" href=\"main.css\">");            
             sal.println("</head>");
             sal.println("<body>");
-            sal.println("Email: " + request.getParameter("email") + "<br/>");
+            sal.println("<div>Email: " + request.getParameter("email") + "<br/>");
             sal.println("Contraseña: " + request.getParameter("password") + "<br/>");
             sal.println("Nombre: " + request.getParameter("nombre") + "<br/>");
             sal.println("Fecha de Nacimiento: " + request.getParameter("fecha") + "<br/>");
-            sal.println("</body>");
+            sal.println("</div></body>");
             sal.println("</html>");
 
     }

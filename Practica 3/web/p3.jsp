@@ -10,11 +10,15 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Datos introducidos</title>
+        
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
+        <div>
         Email: <%=request.getParameter("email")%> <br/>
         Contraseña: <%=request.getParameter("password")%> <br/>
         Nombre:<%=request.getParameter("nombre")%> <br/>
         Fecha de Nacimiento: <%=request.getParameter("fecha")%><br/>
+        </div>
     </body>
 </html>
